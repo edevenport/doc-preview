@@ -417,8 +417,6 @@ Description here...
 | Headers | *http.Header | Response headers|
 | Response | string | Raw JSON response|
 | StatusCode | int | Http response status code |
-| Id         |string|      |           
-| Type_      |string| |
 | Metadata | *Metadata | See [Metadata](#metadata) |
 | Properties | ServerProperties | See [ServerProperties](#serverproperties)|
 | Entities   | *ServerEntities | See [ServerEntities](#serverentities)|
@@ -642,7 +640,7 @@ Description here...
 
 ### Update a Volume
 
-#### func PatchVolume(dcid string, volid string, request VolumeProperties) [Volume] (#type-volume)
+#### func PatchVolume(dcid string, volid string, request VolumeProperties) [Volume](#type-volume)
 
 ---
 
