@@ -17,10 +17,39 @@ This guide will walk you through getting setup with the library and performing v
 * [How to: Attach or Detach Storage Volume](#how-to-attach-or-detach-storage-volume)
 * [How to: List Servers, Volumes, and Data Centers](#how-to-list-servers-volumes-and-data-centers)
 * [Reference](#reference)
-  * [Datacenter](#datacenter)
-  * [Server](#server)
-  * [Volume](#volume)
-  * [Nic](#nic)   
+  * [Data Centers](#data-centers)
+    * [Types](#type-datacenter)
+    * [List Data Centers](#list-data-centers)
+    * [Retrieve a Data Center](#retrieve-a-data-center)
+    * [Create a Data Center](#create-a-data-center)
+    * [Update a Data Center](#update-a-data-center)
+    * [Delete a Data Center](#delete-a-data-center)
+  * [Servers](#servers)
+    * [Types](#type-server)
+    * [List Servers]()
+    * [Retrieve a Server]()
+    * [Create a Server]()
+    * [Update a Server]()
+    * [Delete a Server]()
+    * [Reboot a Server]()
+    * [Start a Server]()
+    * [Stop a Server]()
+    * [Attach a CDROM]()
+    * [Detach a CDROM]()
+    * [List attached CDROMs]()
+    * [Get attached CDROM]()
+  * [Volumes](#volumes)
+    * [Types](#type-volume)
+    * [List Volumes]()
+    * [Retrieve a Volume]()
+    * [Update a Volume]()
+    * [Create a Volume]()
+    * [Delete a Volume]()
+  * [NICs](#servers)
+    * [Types](#type-nic)
+    * [Create a NIC]()
+    * [Update a NIC]()
+    * [Delete a NIC]()
 * [Example](#example)
 * [Support](#support)
 
@@ -271,7 +300,7 @@ datacenters := profitbricks.ListDatacenters()
 
 ## Reference
 
-## Virtual Data Centers
+## Data Centers
 
 Virtual Data Centers are the foundation of the ProfitBricks platform. Virtual Data Centers act as logical containers for all other objects you will be creating, e.g., servers. You can provision as many data centers as you want. Data centers have their own private network and are logically segmented from each other to create isolation.
 
@@ -374,7 +403,7 @@ Notes:
 
 **Note**: This is a highly destructive operation that will remove both the data center and **all** objects within the datacenter. This should be used with extreme caution.
 
-## Server
+## Servers
 
 Description here...
 
@@ -544,7 +573,7 @@ This will retrieve a CDROM that is attached to the server.
 
 #### func GetAttachedCdrom(dcid, srvid, cdid string) [Image](#type-image)
 
-## Volume 
+## Volumes
 
 Description here...
 
@@ -631,7 +660,7 @@ This will delete a volume.
 
 ---
 
-## NIC
+## NICs
 
 ### type Nic
 
